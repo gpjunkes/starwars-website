@@ -1,23 +1,19 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-import { fetchFilm } from '../../service/films-api'
+import FilmImage from './FilmImage'
 
-class FilmDetail extends Component {
-    constructor(props) {
-        super(props)
+const FilmDetailData = props => (
+    <div className="bg-2 " >
+    <div >
+        <FilmImage film={props.film} />
+        <p>Title: {props.film.title}</p>
+        <p>Created: {props.film.created}</p>
+        <p>Director: {props.film.director}</p>
+        <p>Producer: {props.film.producer}</p>
+        <p>Release date: {props.film.release_date}</p>
+        <p>{props.film.opening_crawl}</p>
+    </div>
+    </div>
+)
 
-        this.state = {
-            film: []
-        }
-    }
-
-    componentDidMount() {
-        fetchFilm(1).then(response => this.setState({ film: response.data }))
-    }
-
-    render() {
-        return (
-            <p>{this.state.film.title}</p>
-        )
-    }
-}
+export default FilmDetailData
