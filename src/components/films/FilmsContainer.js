@@ -18,10 +18,10 @@ class FilmsContainer extends Component {
 
     render() {
         return (
-            <div>
-                <h1>Films</h1>
-                <FilmsList films={this.state.films}/>
-            </div>
+            <div className="container-fluid bg-3 text-center">    
+                <h3 className="margin">Films list</h3><br/>
+                <FilmsList films={this.state.films} />
+            </div>     
         )
     }
 }
