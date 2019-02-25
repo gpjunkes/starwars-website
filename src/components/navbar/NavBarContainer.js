@@ -14,9 +14,7 @@ const NavBarContainer = () => (
             </div>
             <div className="collapse navbar-collapse" id="myNavbar">
                 <ul className="nav navbar-nav navbar-right">
-                <li><Link to='/films'>FILMS</Link></li>
-                <li><a href="#">WHAT</a></li>
-                <li><a href="#">WHERE</a></li>
+                <li><Link to='/films'>FILMS</Link></li>                
                 </ul>
             </div>
         </div>

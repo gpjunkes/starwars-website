@@ -18,7 +18,7 @@ const FilmImage = props => (
             case 5:  return ImgFilm5;
             case 6:  return ImgFilm6;
             case 7:  return ImgFilm7;
-            default: return ImgFilm1;
+            default: return '';
         }
     })()} className="img-responsive margin" style={{width:'100%'}} alt={props.film.title}/>
 )

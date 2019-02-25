@@ -6,7 +6,7 @@ body {
 p {font-size: 16px;}
 .margin {margin-bottom: 45px;}
 .bg-1 { 
-  background-color: #1abc9c; /* Green */
+  background-color: #b5b5b5; /* Green */
   color: #ffffff;
 }
 .bg-2 { 
@@ -39,10 +39,16 @@ p {font-size: 16px;}
 }
 
 .films-list a {
-  color: #1abc9c
+  color: #1abc9c;
   text-decoration: none;
 }
 
 .films-list a:hover {
   color: #1abc9c !important;
+}
+
+.film-img-detail {
+  width: 50%;
+  height: 30%;
+  
 }

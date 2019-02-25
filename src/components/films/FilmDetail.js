@@ -14,7 +14,7 @@ class FilmDetail extends Component {
 
     componentDidMount() {
         const { id } = this.props.match.params
-        fetchFilm(id).then(response => this.setState({ film: response.data }))
+        fetchFilm(id).then(response => this.setState({ film: response.data }))        
     }
 
     render() {
